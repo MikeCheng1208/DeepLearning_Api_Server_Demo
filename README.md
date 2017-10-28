@@ -1,6 +1,6 @@
 ## Deep learning Api Server Demo
 
-### 使用 Python 的 Framework 「 Flask 」去啟動server串 Deep learning的資料，回傳JSON可以給前端去做串接
+### 使用 Python 的 Flask 去啟動server介接Deep learning的資料，回傳JSON
 ---
 
 第一步
