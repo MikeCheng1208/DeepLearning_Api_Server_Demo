@@ -8,7 +8,7 @@
 
 
 第二步 
-安裝 Tensorflow
+安裝 Tensorflow
 ```
 pip install tensorflow
 ```
@@ -20,7 +20,7 @@ pip install theano
 ```
 
 第四步 
-安裝 Keras
+安裝 Keras
 ```
 pip install keras
 ```
@@ -30,7 +30,7 @@ pip install keras
 python app.py
 ```
 
-接下來 就可以call這支api，就會回傳Deep learning的資料，去組成JSON回傳
+接下來 就可以call這支api，就會回傳Deep learning的資料，去組成JSON回傳
 ```
 http://127.0.0.1:3001/ai_api 
 ```
