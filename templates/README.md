@@ -1,19 +1,13 @@
-# Gulp for javascript ES6 template
-- 可以使用javascript es6
-- 可以壓縮圖片
-- sass & scss 寫 css
+### Deep learning VG19 測試
+前端用 Vuejs 串接 Api 秀畫面
 
-* 用npm安裝套件
-```
-npm i
-```
 
-* 編譯使用 gulp
+Post 這支 api，就會回傳Deep learning的資料給前端串接
 ```
-npm gulp
+# http://127.0.0.1:3001/ai_api 
+
+{
+    img: {String}
+}
+
 ```
-
-## 修改記錄
-
-### 2017/10/12
- - jsvascript ES6 template 完成

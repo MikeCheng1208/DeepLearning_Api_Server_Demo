@@ -1,6 +1,7 @@
 ## Deep learning Api Server Demo
 
 ### 使用 Python 的 Flask 去啟動server介接Deep learning的資料，回傳JSON
+### 使用 googletrans 將 VG19 的資料變成中文
 ---
 
 第一步
@@ -28,9 +29,4 @@ pip install keras
 執行 
 ```
 python app.py
-```
-
-接下來 就可以call這支api，就會回傳Deep learning的資料，去組成JSON回傳
-```
-http://127.0.0.1:3001/ai_api 
 ```
