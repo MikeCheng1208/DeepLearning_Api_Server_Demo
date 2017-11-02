@@ -33,7 +33,7 @@ def ai_api():
     if request.method == 'POST':
         imgUrl = request.form.get('img')
         imgdata = base64.b64decode(imgUrl[imgUrl.find(",")+1:])
-        img_name = 'VG19img/'+randomHash()+'.jpg'
+        img_name = 'VGG19img/'+randomHash()+'.jpg'
         with open(img_name, 'wb') as f:
             f.write(imgdata)
             f.close()
