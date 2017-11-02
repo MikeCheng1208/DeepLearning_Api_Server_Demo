@@ -12,7 +12,6 @@ def googletranslate(text):
     return translations.text
 
 
-
 class aiRun():
     def runs(self, path):
         model = VGG19(weights='imagenet')
@@ -30,7 +29,8 @@ class aiRun():
         for item in dec:
             aiObj = {
                 "id" : item[0],
-                "name" : googletranslate(item[1]),
+                "name" : str(item[1]).replace("_", " "),
+                "zh_name" : googletranslate(item[1]),
                 "accurate" : str(item[2])
             }
             aiArr.append(aiObj)

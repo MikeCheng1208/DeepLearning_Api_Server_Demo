@@ -3,7 +3,7 @@ Vue.component('data-list', {
     template: `
         <ul>
             <li v-for="(obj,idx) in resdatas" :key="idx">
-                <h2>{{obj.name}}</h2>
+                <h2>{{obj.name}} ({{obj.zh_name}})</h2>
                 <h3>相似度 {{obj.accurate}}%</h3>
             </li>
         </ul>
@@ -20,6 +20,7 @@ new Vue({
             {
                 id: null,
                 name: "無樣本",
+                zh_name: "",
                 accurate: "0"
             }
         ],
@@ -47,6 +48,7 @@ new Vue({
             res.data.map(obj => {
                 this.resData.push({
                     name: obj.name,
+                    zh_name: obj.zh_name,
                     accurate: (Number(obj.accurate) * 100).toFixed(2)
                 })
             })
